@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<recovery>
+	<details>
+		<resolution width="1080" height="1920"/>
+		<author>Ahmed</author>
+		<title>AKRO-X ENGINE RECOVERY</title>
+		<description>Cyber-Prestige Splash UI</description>
+		<themeversion>{themeversion}</themeversion>
+	</details>
+
+	<resources>
+		<font name="font_main" filename="Roboto-Bold.ttf" size="58"/>
+		<font name="font_sub" filename="RobotoCondensed-Regular.ttf" size="38"/>
+		<image name="splash_logo" filename="splashlogo" retainaspect="1"/>
+		<image name="engine_brand" filename="splashteamwin" retainaspect="1"/>
+	</resources>
+
+	<variables>
+		<variable name="screen_width" value="1080"/>
+		<variable name="screen_height" value="1920"/>
+		<variable name="background_color" value="#000000"/> 
+		<variable name="accent_color" value="#FF8C00"/> <variable name="electric_blue" value="#007FFF"/> <variable name="text_secondary" value="#B0B0B0"/>
+	</variables>
+
+	<pages>
+		<page name="splash">
+			<background color="%background_color%"/>
+
+			<image>
+				<image resource="splash_logo"/>
+				<placement x="540" y="960" placement="4"/>
+			</image>
+
+			<fill color="%accent_color%">
+				<placement x="340" y="1100" w="400" h="4"/>
+			</fill>
+
+			<image>
+				<image resource="engine_brand"/>
+				<placement x="540" y="1750" placement="4"/>
+			</image>
+
+			<text color="%electric_blue%">
+				<font resource="font_sub"/>
+				<placement x="540" y="1820" placement="5"/>
+				<text>Ahmed Younis %tw_version%</text>
+			</text>
+		</page>
+	</pages>
+</recovery>

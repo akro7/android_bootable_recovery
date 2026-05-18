@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<recovery>
+	<details>
+		<resolution width="480" height="800"/>
+		<author>Ahmed (AKRO)</author>
+		<title>AKRO-X ENGINE RECOVERY</title>
+		<description>Cyber-Prestige Splash Screen</description>
+		<themeversion>{themeversion}</themeversion>
+	</details>
+
+	<resources>
+		<font name="font_l" filename="RobotoCondensed-Regular.ttf" size="24"/>
+		<image name="splashlogo" filename="splashlogo" retainaspect="1"/>
+		<image name="splashteamwin" filename="splashteamwin" retainaspect="1"/>
+	</resources>
+
+	<variables>
+		<variable name="screen_width" value="480"/>
+		<variable name="screen_height" value="800"/>
+		<variable name="background_color" value="#000000"/> <variable name="header_color" value="#007FFF"/> <variable name="accent_color" value="#FF8C00"/> </variables>
+
+	<pages>
+		<page name="splash">
+			<background color="%background_color%"/>
+
+			<fill color="%header_color%">
+				<placement x="0" y="0" w="%screen_width%" h="200"/>
+			</fill>
+
+			<image>
+				<image resource="splashlogo"/>
+				<placement x="240" y="200" placement="4"/>
+			</image>
+
+			<fill color="%accent_color%">
+				<placement x="140" y="320" w="200" h="2"/>
+			</fill>
+
+			<image>
+				<image resource="splashteamwin"/>
+				<placement x="240" y="660" placement="4"/>
+			</image>
+
+			<text color="%header_color%">
+				<font resource="font_l"/>
+				<placement x="240" y="680" placement="5"/>
+				<text>Ahmed Younis %tw_version%</text>
+			</text>
+		</page>
+	</pages>
+</recovery>

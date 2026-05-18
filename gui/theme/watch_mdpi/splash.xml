@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<recovery>
+	<details>
+		<resolution width="320" height="320"/>
+		<author>Ahmed (AKRO)</author>
+		<title>AKRO-X ULTRA ENGINE</title>
+		<description>Cyber-Prestige Amoled Splash for 320x320</description>
+		<themeversion>{themeversion}</themeversion>
+	</details>
+
+	<resources>
+		<font name="font_l" filename="RobotoCondensed-Regular.ttf" size="28"/>
+		<font name="font_s" filename="RobotoCondensed-Regular.ttf" size="18"/>
+		<image name="splashlogo" filename="splashlogo" retainaspect="1"/>
+		<image name="splashteamwin" filename="splashteamwin" retainaspect="1"/>
+	</resources>
+
+	<variables>
+		<variable name="screen_width" value="320"/>
+		<variable name="screen_height" value="320"/>
+		<variable name="background_color" value="#000000"/>
+		<variable name="header_color" value="#007FFF"/>
+		<variable name="text_color" value="#FFFFFF"/>
+	</variables>
+
+	<pages>
+		<page name="splash">
+			<background color="%background_color%"/>
+
+			<fill color="%header_color%">
+				<placement x="0" y="0" w="%screen_width%" h="40"/>
+			</fill>
+
+			<image>
+				<image resource="splashlogo"/>
+				<placement x="160" y="160" placement="4"/>
+			</image>
+
+			<image>
+				<image resource="splashteamwin"/>
+				<placement x="160" y="270" placement="4"/>
+			</image>
+
+			<text color="%header_color%">
+				<font resource="font_s"/>
+				<placement x="160" y="295" placement="5"/>
+				<text>Ahmad Younis %tw_version%</text>
+			</text>
+		</page>
+	</pages>
+</recovery>

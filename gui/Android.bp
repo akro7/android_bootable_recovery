@@ -1,0 +1,14 @@
+// OPTSE Ultra Engine Theme
+// Merged from: TWRP (guitwrp) + OrangeFox (guiofox) + PBRP (guipbrp)
+// Built by AKRO — github.com/akro7
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+filegroup {
+    name: "optse_gui_theme_common",
+    srcs: [
+        "theme/common/**/*",
+    ],
+}
